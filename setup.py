@@ -7,17 +7,18 @@ classifiers = [
   'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
   'Programming Language :: Python :: 3'
 ]
- 
+
 setup(
-  name='ascii-conv',
-  version='0.1.1',
-  description='Convert text to be ASCII compatiable and back',
-  long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
-  url='',  
-  author='Synergetic00',
-  license='GPLv3', 
-  classifiers=classifiers,
-  keywords='ascii', 
-  packages=find_packages(),
-  install_requires=[''] 
+    name='ascii-conv',
+    version='0.1.1',
+    description='Convert text to be ASCII compatiable and back',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    url='',  
+    author='Synergetic00',
+    license='GPLv3', 
+    classifiers=classifiers,
+    keywords='ascii', 
+    packages=find_packages(),
+    install_requires=[''] 
 )
