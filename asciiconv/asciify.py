@@ -65,12 +65,15 @@ unicodeLower = [
 spaces = [8239, 8287, 12288, 5760, 160]
 spaces += range(8192, 8203)
 
+original = range(0,128)
+
 def asciify(input):
-    print(spaces)
     output = ''
     for char in input:
         num = ord(char)
         out = num
+        if num in original:
+            output += char
         for group in unicodeUpper:
             if num in group:
                 out -= group[0]
@@ -82,3 +85,6 @@ def asciify(input):
         if num in spaces:
             output += ' '
     return output
+
+test = 'ℌ𝔢𝔩𝔩𝔬 𝖂𝖔𝖗𝖑𝖉 𝓣𝓱𝓲𝓼'
+print(asciify(test))
