@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name='ascii-conv',
-    version='0.1.1',
+    version='0.1.3',
     description='Convert text to be ASCII compatiable and back',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

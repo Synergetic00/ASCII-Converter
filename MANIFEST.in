@@ -1,1 +1,3 @@
-global-include *.txt *.py
+include *.txt
+include *.py
+include ascii-conv/*.py
